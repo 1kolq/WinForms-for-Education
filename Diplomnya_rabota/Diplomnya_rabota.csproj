@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9CDFC198-A049-4E3D-B825-3E960AA0BA1E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Diplomnya_rabota</RootNamespace>
+    <AssemblyName>Diplomnya_rabota</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practicLab1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practicLab1.Designer.cs">
+      <DependentUpon>practicLab1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practicLab2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practicLab2.Designer.cs">
+      <DependentUpon>practicLab2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practicLab3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practicLab3.Designer.cs">
+      <DependentUpon>practicLab3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practicLab4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practicLab4.Designer.cs">
+      <DependentUpon>practicLab4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="practicLab5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="practicLab5.Designer.cs">
+      <DependentUpon>practicLab5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tasksAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tasksAddForm.Designer.cs">
+      <DependentUpon>tasksAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherAddForm.Designer.cs">
+      <DependentUpon>teacherAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherLoginForm.Designer.cs">
+      <DependentUpon>teacherLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherMainForm.Designer.cs">
+      <DependentUpon>teacherMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherRegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherRegistrationForm.Designer.cs">
+      <DependentUpon>teacherRegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="teacherSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teacherSettings.Designer.cs">
+      <DependentUpon>teacherSettings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="practicLab1.resx">
+      <DependentUpon>practicLab1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="practicLab2.resx">
+      <DependentUpon>practicLab2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="practicLab3.resx">
+      <DependentUpon>practicLab3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="practicLab4.resx">
+      <DependentUpon>practicLab4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="practicLab5.resx">
+      <DependentUpon>practicLab5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="tasksAddForm.resx">
+      <DependentUpon>tasksAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherAddForm.resx">
+      <DependentUpon>teacherAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherLoginForm.resx">
+      <DependentUpon>teacherLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherMainForm.resx">
+      <DependentUpon>teacherMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherRegistrationForm.resx">
+      <DependentUpon>teacherRegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teacherSettings.resx">
+      <DependentUpon>teacherSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-computer-icons-login-login-button-miscellaneous-angle-text-thumbnail.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
